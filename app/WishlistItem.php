@@ -21,4 +21,11 @@ class WishlistItem extends Model
         return $this->hasOne('App\User', 'id', 'buyer_id');
     }
 
+    /**
+     * Wishlist Item has an owner
+     */
+    public function owner()
+    {
+        return $this->hasOne('App\User', 'id', 'user_id');
+    }
 }

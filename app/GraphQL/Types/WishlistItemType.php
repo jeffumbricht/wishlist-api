@@ -37,6 +37,10 @@ class WishlistItemType extends GraphQLType
             'buyer' => [
                 'type' => GraphQL::type('User'),
                 'description' => 'The user who will buy this wishlist item',
+            ],
+            'owner' => [
+                'type' => GraphQL::type('User'),
+                'description' => 'The user who created this wishlist item',
             ]
         ];
     }
