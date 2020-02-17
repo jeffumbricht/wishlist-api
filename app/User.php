@@ -44,4 +44,12 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\WishlistItem');
     }
+
+    /**
+     * Get the wishlistItems user has marked as "buying".
+     */
+    public function wishlistItemsToBuy()
+    {
+        return $this->hasMany('App\WishlistItem', 'buyer_id', 'id');
+    }
 }

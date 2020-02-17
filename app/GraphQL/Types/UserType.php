@@ -33,6 +33,10 @@ class UserType extends GraphQLType
             'wishlistItems' => [
                 'type' => Type::listOf(GraphQL::type('WishlistItem')),
                 'description' => 'The user\'s wishlist items',
+            ],
+            'wishlistItemsToBuy' => [
+                'type' => Type::listOf(GraphQL::type('WishlistItem')),
+                'description' => 'The wishlist items user marked as "buying" ',
             ]
         ];
     }
