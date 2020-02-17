@@ -123,6 +123,7 @@ return [
     //
     'types' => [
         'User' => App\GraphQL\Types\UserType::class,
+        'WishlistItem' => App\GraphQL\Types\WishlistItemType::class,
     ],
 
     // The types will be loaded on demand. Default is to load all types on each request
