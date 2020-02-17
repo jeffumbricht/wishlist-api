@@ -103,6 +103,8 @@ return [
             'query' => [
                 'user' => App\GraphQL\Queries\UserQuery::class,
                 'users' => App\GraphQL\Queries\UsersQuery::class,
+                'wishlistItem' => App\GraphQL\Queries\WishlistItemQuery::class,
+                'wishlistItems' => App\GraphQL\Queries\WishlistItemsQuery::class,
             ],
             'mutation' => [
                 // 'example_mutation'  => ExampleMutation::class,
